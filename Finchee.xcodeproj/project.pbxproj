@@ -15,6 +15,9 @@
 		61584F91229AE23000CDCE6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61584F8F229AE23000CDCE6C /* LaunchScreen.storyboard */; };
 		61584F9C229AE23100CDCE6C /* FincheeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61584F9B229AE23100CDCE6C /* FincheeTests.swift */; };
 		61584FA7229AE23100CDCE6C /* FincheeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61584FA6229AE23100CDCE6C /* FincheeUITests.swift */; };
+		61FE7C2922B704F600AC1229 /* FincheeNewsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 61FE7C2822B704F600AC1229 /* FincheeNewsData.json */; };
+		61FE7C2B22B7057000AC1229 /* FincheeNewsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FE7C2A22B7057000AC1229 /* FincheeNewsData.swift */; };
+		61FE7C2E22B7073500AC1229 /* FincheeHeadlineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FE7C2D22B7073500AC1229 /* FincheeHeadlineViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		61584FA2229AE23100CDCE6C /* FincheeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FincheeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		61584FA6229AE23100CDCE6C /* FincheeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FincheeUITests.swift; sourceTree = "<group>"; };
 		61584FA8229AE23100CDCE6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61FE7C2822B704F600AC1229 /* FincheeNewsData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FincheeNewsData.json; sourceTree = "<group>"; };
+		61FE7C2A22B7057000AC1229 /* FincheeNewsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FincheeNewsData.swift; sourceTree = "<group>"; };
+		61FE7C2D22B7073500AC1229 /* FincheeHeadlineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FincheeHeadlineViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +105,10 @@
 		61584F82229AE22F00CDCE6C /* Finchee */ = {
 			isa = PBXGroup;
 			children = (
+				61FE7C2C22B7070500AC1229 /* Headlines */,
+				61FE7C2722B702F800AC1229 /* View */,
 				61584F83229AE22F00CDCE6C /* AppDelegate.swift */,
+				61FE7C2622B702C800AC1229 /* Model */,
 				61584F85229AE22F00CDCE6C /* ViewController.swift */,
 				61584F87229AE22F00CDCE6C /* Main.storyboard */,
 				61584F8D229AE23000CDCE6C /* Assets.xcassets */,
@@ -126,6 +135,30 @@
 				61584FA8229AE23100CDCE6C /* Info.plist */,
 			);
 			path = FincheeUITests;
+			sourceTree = "<group>";
+		};
+		61FE7C2622B702C800AC1229 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				61FE7C2822B704F600AC1229 /* FincheeNewsData.json */,
+				61FE7C2A22B7057000AC1229 /* FincheeNewsData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		61FE7C2722B702F800AC1229 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		61FE7C2C22B7070500AC1229 /* Headlines */ = {
+			isa = PBXGroup;
+			children = (
+				61FE7C2D22B7073500AC1229 /* FincheeHeadlineViewModel.swift */,
+			);
+			path = Headlines;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +268,7 @@
 				61584F91229AE23000CDCE6C /* LaunchScreen.storyboard in Resources */,
 				61584F8E229AE23000CDCE6C /* Assets.xcassets in Resources */,
 				61584F89229AE22F00CDCE6C /* Main.storyboard in Resources */,
+				61FE7C2922B704F600AC1229 /* FincheeNewsData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +294,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				61584F86229AE22F00CDCE6C /* ViewController.swift in Sources */,
+				61FE7C2B22B7057000AC1229 /* FincheeNewsData.swift in Sources */,
+				61FE7C2E22B7073500AC1229 /* FincheeHeadlineViewModel.swift in Sources */,
 				61584F8C229AE22F00CDCE6C /* Finchee.xcdatamodeld in Sources */,
 				61584F84229AE22F00CDCE6C /* AppDelegate.swift in Sources */,
 			);
