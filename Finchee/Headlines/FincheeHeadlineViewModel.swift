@@ -10,13 +10,13 @@ import Foundation
 
 
 class FincheeHeadlineViewModel {
-    let name: String
     let title: String
-    let url: String
+    let text: String
+    let link: String
     
-    init(name: String, title: String, url: String) {
-        self.name = name
+    init(title: String, text: String, link: String) {
         self.title = title
-        self.url = url
+        self.text = text
+        self.link = link
     }
 }

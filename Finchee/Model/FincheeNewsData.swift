@@ -8,39 +8,38 @@
 
 import Foundation
 
-//will use mock data from .json file for now until API is connected. 
-struct FincheeDataModel {
-    var headlines : [FincheeHeadlineViewModel] = []
+struct RobinhoodDataModel {
+    var cards: [FincheeHeadlineViewModel] = []
     
-    init(jsonContent: [[String:String]]){
-        self.headlines = jsonContent.compactMap({ (headlineModelJSON) -> FincheeHeadlineViewModel? in
-            guard let name = headlineModelJSON["name"],
-                let title = headlineModelJSON["title"],
-                let url = headlineModelJSON["url"] else { return nil }
+    init(jsonContent: [[String: String]]) {
+        self.cards = jsonContent.compactMap({ (cardModelJSON) -> FincheeHeadlineViewModel? in
+            guard let title = cardModelJSON["title"],
+                let text = cardModelJSON["text"],
+                let link = cardModelJSON["link"] else { return nil }
             
-            return FincheeHeadlineViewModel(name:name,title:title,url:url)
+            return FincheeHeadlineViewModel(title: title, text: text, link: link)
         })
     }
 }
 
-class FincheeNewsData {
-    static let jsonURL = Bundle.main.url(forResource: "FincheeNewsData", withExtension: "json")!
+class RobinhoodData {
+    static let jsonURL = Bundle.main.url(forResource: "RobinhoodData", withExtension: "json")!
     
-    static var data: FincheeDataModel {
+    static var data: RobinhoodDataModel {
         do {
-            let headlinesData = try Data(contentsOf: jsonURL)
+            let cardsData = try Data(contentsOf: jsonURL)
             
-            if let headlinesContent = try JSONSerialization.jsonObject(with: headlinesData, options: JSONSerialization.ReadingOptions()) as? [[String: String]] {
+            if let cardsContent = try JSONSerialization.jsonObject(with: cardsData, options: JSONSerialization.ReadingOptions()) as? [[String: String]] {
                 
-                return FincheeDataModel(jsonContent: headlinesContent)
+                return RobinhoodDataModel(jsonContent: cardsContent)
                 
             } else {
-                return FincheeDataModel(jsonContent: [])
+                return RobinhoodDataModel(jsonContent: [])
             }
         }
             
         catch {
-            return FincheeDataModel(jsonContent: [])
+            return RobinhoodDataModel(jsonContent: [])
         }
     }
 }

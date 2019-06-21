@@ -17,48 +17,9 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uPX-eh-Nnf">
-                                <rect key="frame" x="0.0" y="612" width="414" height="250"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="9z4-GC-uXj"/>
-                                </constraints>
-                                <collectionViewLayout key="collectionViewLayout" id="vaT-1m-zku" customClass="HeadlineStackLayout" customModule="Finchee" customModuleProvider="target"/>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="HeadlineCell" id="0wf-Y2-Vp3" customClass="FincheeHeadlineCell" customModule="Finchee" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </view>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3vm-Vc-mJs" userLabel="Top View">
-                                <rect key="frame" x="19.5" y="20" width="375" height="592"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="o3t-LZ-mU2"/>
-                                </constraints>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="3vm-Vc-mJs" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4mS-3e-rPf"/>
-                            <constraint firstItem="uPX-eh-Nnf" firstAttribute="top" secondItem="3vm-Vc-mJs" secondAttribute="bottom" id="Jmr-gp-TWY"/>
-                            <constraint firstAttribute="top" secondItem="3vm-Vc-mJs" secondAttribute="top" constant="-20" id="WEG-dc-8r0"/>
-                            <constraint firstItem="uPX-eh-Nnf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ZOl-s2-gzI"/>
-                            <constraint firstItem="uPX-eh-Nnf" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="g3e-35-EW4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uPX-eh-Nnf" secondAttribute="bottom" id="t8d-aq-kdu"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="headlineCollectionView" destination="uPX-eh-Nnf" id="PzG-6m-2gD"/>
-                        <outlet property="topView" destination="3vm-Vc-mJs" id="8o8-8Y-RMf"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
