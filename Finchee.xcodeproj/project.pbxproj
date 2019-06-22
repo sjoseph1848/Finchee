@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		61584F84229AE22F00CDCE6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61584F83229AE22F00CDCE6C /* AppDelegate.swift */; };
-		61584F86229AE22F00CDCE6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61584F85229AE22F00CDCE6C /* ViewController.swift */; };
 		61584F89229AE22F00CDCE6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61584F87229AE22F00CDCE6C /* Main.storyboard */; };
 		61584F8C229AE22F00CDCE6C /* Finchee.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 61584F8A229AE22F00CDCE6C /* Finchee.xcdatamodeld */; };
 		61584F8E229AE23000CDCE6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61584F8D229AE23000CDCE6C /* Assets.xcassets */; };
@@ -16,6 +15,9 @@
 		61584F9C229AE23100CDCE6C /* FincheeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61584F9B229AE23100CDCE6C /* FincheeTests.swift */; };
 		61584FA7229AE23100CDCE6C /* FincheeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61584FA6229AE23100CDCE6C /* FincheeUITests.swift */; };
 		61D2D34A22BCE52E00313529 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D2D34922BCE52E00313529 /* BaseTabBarController.swift */; };
+		61D2D34F22BCF67800313529 /* AppsSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D2D34E22BCF67800313529 /* AppsSearchController.swift */; };
+		61D2D35422BEAB2300313529 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D2D35322BEAB2300313529 /* ViewController.swift */; };
+		61D2D35722BEABDE00313529 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D2D35622BEABDE00313529 /* SearchResultCell.swift */; };
 		61FE7C3522B7142800AC1229 /* StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FE7C3422B7142800AC1229 /* StyleGuide.swift */; };
 		61FE7C3F22B7146D00AC1229 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61FE7C3922B7146D00AC1229 /* Roboto-Bold.ttf */; };
 		61FE7C4022B7146D00AC1229 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61FE7C3A22B7146D00AC1229 /* Roboto-Light.ttf */; };
@@ -45,7 +47,6 @@
 /* Begin PBXFileReference section */
 		61584F80229AE22F00CDCE6C /* Finchee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Finchee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61584F83229AE22F00CDCE6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		61584F85229AE22F00CDCE6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		61584F88229AE22F00CDCE6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		61584F8B229AE22F00CDCE6C /* Finchee.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Finchee.xcdatamodel; sourceTree = "<group>"; };
 		61584F8D229AE23000CDCE6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,6 +59,9 @@
 		61584FA6229AE23100CDCE6C /* FincheeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FincheeUITests.swift; sourceTree = "<group>"; };
 		61584FA8229AE23100CDCE6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61D2D34922BCE52E00313529 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		61D2D34E22BCF67800313529 /* AppsSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsSearchController.swift; sourceTree = "<group>"; };
+		61D2D35322BEAB2300313529 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		61D2D35622BEABDE00313529 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		61FE7C3422B7142800AC1229 /* StyleGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleGuide.swift; sourceTree = "<group>"; };
 		61FE7C3922B7146D00AC1229 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		61FE7C3A22B7146D00AC1229 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
@@ -116,14 +120,16 @@
 		61584F82229AE22F00CDCE6C /* Finchee */ = {
 			isa = PBXGroup;
 			children = (
+				61D2D35522BEABA800313529 /* Views */,
 				61FE7C3322B7140300AC1229 /* Helpers */,
-				61FE7C2722B702F800AC1229 /* View */,
+				61FE7C2722B702F800AC1229 /* Controller */,
 				61584F87229AE22F00CDCE6C /* Main.storyboard */,
 				61584F83229AE22F00CDCE6C /* AppDelegate.swift */,
 				61584F8D229AE23000CDCE6C /* Assets.xcassets */,
 				61584F8F229AE23000CDCE6C /* LaunchScreen.storyboard */,
 				61584F92229AE23000CDCE6C /* Info.plist */,
 				61584F8A229AE22F00CDCE6C /* Finchee.xcdatamodeld */,
+				61D2D35322BEAB2300313529 /* ViewController.swift */,
 			);
 			path = Finchee;
 			sourceTree = "<group>";
@@ -146,13 +152,21 @@
 			path = FincheeUITests;
 			sourceTree = "<group>";
 		};
-		61FE7C2722B702F800AC1229 /* View */ = {
+		61D2D35522BEABA800313529 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				61584F85229AE22F00CDCE6C /* ViewController.swift */,
-				61D2D34922BCE52E00313529 /* BaseTabBarController.swift */,
+				61D2D35622BEABDE00313529 /* SearchResultCell.swift */,
 			);
-			path = View;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		61FE7C2722B702F800AC1229 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				61D2D34922BCE52E00313529 /* BaseTabBarController.swift */,
+				61D2D34E22BCF67800313529 /* AppsSearchController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		61FE7C3322B7140300AC1229 /* Helpers */ = {
@@ -314,9 +328,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61D2D35722BEABDE00313529 /* SearchResultCell.swift in Sources */,
+				61D2D35422BEAB2300313529 /* ViewController.swift in Sources */,
 				61FE7C3522B7142800AC1229 /* StyleGuide.swift in Sources */,
-				61584F86229AE22F00CDCE6C /* ViewController.swift in Sources */,
 				61D2D34A22BCE52E00313529 /* BaseTabBarController.swift in Sources */,
+				61D2D34F22BCF67800313529 /* AppsSearchController.swift in Sources */,
 				61584F8C229AE22F00CDCE6C /* Finchee.xcdatamodeld in Sources */,
 				61584F84229AE22F00CDCE6C /* AppDelegate.swift in Sources */,
 			);
