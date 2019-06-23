@@ -18,6 +18,9 @@
 		61D2D34F22BCF67800313529 /* AppsSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D2D34E22BCF67800313529 /* AppsSearchController.swift */; };
 		61D2D35422BEAB2300313529 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D2D35322BEAB2300313529 /* ViewController.swift */; };
 		61D2D35722BEABDE00313529 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D2D35622BEABDE00313529 /* SearchResultCell.swift */; };
+		61D2D35C22BEB66C00313529 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D2D35B22BEB66C00313529 /* UIView+Layout.swift */; };
+		61D2D36B22BFEF4800313529 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D2D36A22BFEF4800313529 /* SearchResult.swift */; };
+		61D2D36D22BFF02100313529 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D2D36C22BFF02100313529 /* Service.swift */; };
 		61FE7C3522B7142800AC1229 /* StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FE7C3422B7142800AC1229 /* StyleGuide.swift */; };
 		61FE7C3F22B7146D00AC1229 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61FE7C3922B7146D00AC1229 /* Roboto-Bold.ttf */; };
 		61FE7C4022B7146D00AC1229 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61FE7C3A22B7146D00AC1229 /* Roboto-Light.ttf */; };
@@ -62,6 +65,9 @@
 		61D2D34E22BCF67800313529 /* AppsSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsSearchController.swift; sourceTree = "<group>"; };
 		61D2D35322BEAB2300313529 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		61D2D35622BEABDE00313529 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		61D2D35B22BEB66C00313529 /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		61D2D36A22BFEF4800313529 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		61D2D36C22BFF02100313529 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		61FE7C3422B7142800AC1229 /* StyleGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleGuide.swift; sourceTree = "<group>"; };
 		61FE7C3922B7146D00AC1229 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		61FE7C3A22B7146D00AC1229 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
@@ -120,6 +126,8 @@
 		61584F82229AE22F00CDCE6C /* Finchee */ = {
 			isa = PBXGroup;
 			children = (
+				61D2D36922BFEF3200313529 /* Service */,
+				61D2D36822BFEEF200313529 /* Model */,
 				61D2D35522BEABA800313529 /* Views */,
 				61FE7C3322B7140300AC1229 /* Helpers */,
 				61FE7C2722B702F800AC1229 /* Controller */,
@@ -160,6 +168,22 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		61D2D36822BFEEF200313529 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				61D2D36A22BFEF4800313529 /* SearchResult.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		61D2D36922BFEF3200313529 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				61D2D36C22BFF02100313529 /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		61FE7C2722B702F800AC1229 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				61FE7C3422B7142800AC1229 /* StyleGuide.swift */,
+				61D2D35B22BEB66C00313529 /* UIView+Layout.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -328,11 +353,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61D2D35C22BEB66C00313529 /* UIView+Layout.swift in Sources */,
+				61D2D36B22BFEF4800313529 /* SearchResult.swift in Sources */,
 				61D2D35722BEABDE00313529 /* SearchResultCell.swift in Sources */,
 				61D2D35422BEAB2300313529 /* ViewController.swift in Sources */,
 				61FE7C3522B7142800AC1229 /* StyleGuide.swift in Sources */,
 				61D2D34A22BCE52E00313529 /* BaseTabBarController.swift in Sources */,
 				61D2D34F22BCF67800313529 /* AppsSearchController.swift in Sources */,
+				61D2D36D22BFF02100313529 /* Service.swift in Sources */,
 				61584F8C229AE22F00CDCE6C /* Finchee.xcdatamodeld in Sources */,
 				61584F84229AE22F00CDCE6C /* AppDelegate.swift in Sources */,
 			);

@@ -22,19 +22,40 @@ class AppsSearchController: UICollectionViewController,UICollectionViewDelegateF
         
         //Register cell using cellId
         collectionView.register(SearchResultCell.self, forCellWithReuseIdentifier: cellId)
+        
+        fetchStocks()
 
 }
+    
+    fileprivate var stockSymbols = [Symbols]()
+    
+    fileprivate func fetchStocks(){
+        Service.shared.fetchSymbols{ (stockSymbols,err) in
+            if let err = err {
+                print("Failed to fetch stocks:",err)
+                return
+            }
+            self.stockSymbols = stockSymbols
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+            }
+        }
+    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return .init(width: view.frame.width,height:250)
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return stockSymbols.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! SearchResultCell
+        let stockSymbol = stockSymbols[indexPath.item]
+        cell.symbolLabel.text = stockSymbol.symbol
+        cell.nameLabel.text = stockSymbol.name
+        cell.priceLabel.text = "\(stockSymbol.price ?? 0)"
         return cell
     }
     

@@ -24,24 +24,24 @@ class SearchResultCell: UICollectionViewCell {
         return iv
     }()
     
-    let nameLabel:UILabel = {
+    let symbolLabel:UILabel = {
         
         let label = UILabel()
-        label.text = "STOCK NAME"
+        label.text = "SPY"
         label.textColor = .white
         return label
     }()
     
-    let categoryLabel: UILabel = {
+    let nameLabel: UILabel = {
         let label = UILabel()
-        label.text = "INDUSTRY"
-        label.textColor = .white    
+        label.text = "SPDR S&P 500"
+        label.textColor = .white
         return label
     }()
     
-    let ratingsLabel: UILabel = {
+    let priceLabel: UILabel = {
         let label = UILabel()
-        label.text = "9.26M"
+        label.text = "294.57"
         label.textColor = .white
         return label
     }()
@@ -63,7 +63,7 @@ class SearchResultCell: UICollectionViewCell {
         
         backgroundColor = .black
         
-        let labelsStackView = UIStackView(arrangedSubviews: [nameLabel,categoryLabel,ratingsLabel])
+        let labelsStackView = UIStackView(arrangedSubviews: [symbolLabel,nameLabel,priceLabel])
         labelsStackView.axis = .vertical
         
         
@@ -74,12 +74,7 @@ class SearchResultCell: UICollectionViewCell {
         
         addSubview(stackView)
         
-        //add constraints
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
-        stackView.leadingAnchor.constraint(equalTo:self.leadingAnchor, constant: 16).isActive = true
-        stackView.bottomAnchor.constraint(equalTo:self.bottomAnchor).isActive = true
-        stackView.trailingAnchor.constraint(equalTo:self.trailingAnchor, constant: -16).isActive = true
+        stackView.fillSuperview(padding: .init(top:16,left:16,bottom:16,right:16))
     }
     
     required init?(coder aDecoder: NSCoder) {
